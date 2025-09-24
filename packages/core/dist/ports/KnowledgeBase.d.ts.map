@@ -1,0 +1,1 @@
+{"version":3,"file":"KnowledgeBase.d.ts","sourceRoot":"","sources":["../../src/ports/KnowledgeBase.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,MAAM;IACvB,OAAO,EAAE,MAAM,CAAC;IAChB,GAAG,EAAE,MAAM,CAAC;IACZ,GAAG,CAAC,EAAE,MAAM,CAAC;CACZ;AAED,MAAM,WAAW,iBAAiB;IAClC,MAAM,CAAC,KAAK,EAAE,MAAM,GAAG,OAAO,CAAC,MAAM,EAAE,CAAC,CAAC;CACxC"}

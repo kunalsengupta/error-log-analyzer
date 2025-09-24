@@ -1,0 +1,1 @@
+{"version":3,"file":"SkinPort.d.ts","sourceRoot":"","sources":["../../src/ports/SkinPort.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,uBAAuB,CAAC;AAG5D,MAAM,WAAW,QAAQ;IACzB,OAAO,CAAC,MAAM,EAAE,cAAc,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC;CAC9C"}

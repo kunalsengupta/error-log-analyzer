@@ -1,0 +1,13 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build for CLI yet\"",
+    "dev": "echo \"CLI dev coming soon\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

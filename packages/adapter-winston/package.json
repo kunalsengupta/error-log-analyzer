@@ -1,0 +1,14 @@
+{
+  "name": "@ela/adapter-winston",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "winston": ">=3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/dev.ts"
+  }
+}

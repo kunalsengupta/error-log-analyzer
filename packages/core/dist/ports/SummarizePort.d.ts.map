@@ -1,0 +1,1 @@
+{"version":3,"file":"SummarizePort.d.ts","sourceRoot":"","sources":["../../src/ports/SummarizePort.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,QAAQ,EAAE,MAAM,uBAAuB,CAAC;AAGtD,MAAM,WAAW,cAAc;IAC/B,SAAS,CAAC,MAAM,EAAE,QAAQ,EAAE,EAAE,IAAI,CAAC,EAAE,MAAM,GAAG,OAAO,CAAC,MAAM,CAAC,CAAC;CAC7D"}

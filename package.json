@@ -1,0 +1,19 @@
+{
+  "name": "error-log-analyzer-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm -ws run build",
+    "dev:core": "npm -w @ela/core run dev",
+    "dev:winston": "npm -w @ela/adapter-winston run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "dotenv": "^17.2.2",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.16.2",
+    "typescript": "^5.9.2"
+  }
+}
