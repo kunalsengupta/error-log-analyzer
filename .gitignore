@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+# Optional logs & debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional OS junk
+.DS_Store
+
+
+
+
+# TypeScript
+**/dist
+**/*.tsbuildinfo
+
+# Lockfiles you don't use (keep one!)
+# yarn.lock
+# pnpm-lock.yaml
