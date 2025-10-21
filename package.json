@@ -7,7 +7,10 @@
   "scripts": {
     "build": "npm -ws run build",
     "dev:core": "npm -w @ela/core run dev",
-    "dev:winston": "npm -w @ela/adapter-winston run dev"
+    "dev:winston": "npm -w @ela/adapter-winston run dev",
+    "db:generate": "npm -w @ela/adapter-sink-postgres run prisma:generate",
+    "db:migrate": "npm -w @ela/adapter-sink-postgres run prisma:migrate",
+    "dev:prisma": "npm -w @ela/adapter-sink-postgres run dev"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",

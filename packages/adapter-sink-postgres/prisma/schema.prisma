@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model ErrorGroup {
+  id          String   @id @default(uuid())
+  fingerprint String
+  service     String?
+  firstSeen   DateTime @default(now())
+  lastSeen    DateTime @default(now())
+  totalCount  Int      @default(0)
+
+  @@unique([fingerprint, service])
+
+  events   Event[]
+  analyses Analysis[]
+}
+
+model Event {
+  id        BigInt     @id @default(autoincrement())
+  group     ErrorGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  groupId   String
+  ts        DateTime   @default(now())
+  level     String?
+  message   String
+  service   String?
+  module    String?
+  line      Int?
+  stack     String?
+  meta      Json?
+}
+
+model Analysis {
+  id            String     @id @default(uuid())
+  group         ErrorGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  groupId       String
+  createdAt     DateTime   @default(now())
+  level         String?
+  priority      String?
+  title         String?
+  probableCause String?
+  confidence    Float?
+  filesToCheck  Json?
+  checks        Json?
+  commands      Json?
+  fixes         Json?
+  rawSummary    String?
+}
